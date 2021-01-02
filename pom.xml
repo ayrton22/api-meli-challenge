@@ -84,8 +84,8 @@
 				<configuration>
 					<excludes>
 						<!--<skipTests>false</skipTests>
-						<testFailureIgnore>true</testFailureIgnore>-->
-						<forkMode>once</forkMode>
+						<testFailureIgnore>true</testFailureIgnore>
+						<forkMode>once</forkMode>-->
 						<exclude>
 							<groupId>org.projectlombok</groupId>
 							<artifactId>lombok</artifactId>
