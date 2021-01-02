@@ -13,5 +13,5 @@ import lombok.Setter;
 @Setter
 public class Cupon {
     private String id;
-    private Double cuponValue;
+    private Float cuponValue;
 }

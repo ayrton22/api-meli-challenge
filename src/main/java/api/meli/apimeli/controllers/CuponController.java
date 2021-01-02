@@ -3,7 +3,6 @@ package api.meli.apimeli.controllers;
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
-import java.util.Collection;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -11,7 +10,6 @@ import java.util.Map;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import org.springframework.beans.factory.annotation.Value;
@@ -62,15 +60,19 @@ public class CuponController {
 
             Float price = obj.getFloat("price");
 
-            items.put(item, price);
+            System.out.println(price);
 
-            // System.out.println(price);
+            items.put(item, price);
         }
+
+        System.out.println(items);
+
+        System.out.println("amount" + request.getAmount());
 
         List<String> response = cuponService.calculate(items, request.getAmount());
         if (response.isEmpty()) {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
-        return ResponseEntity.accepted().body(response);
+        return ResponseEntity.ok().body(response);
     }
 }
