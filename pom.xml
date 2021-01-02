@@ -83,7 +83,8 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
 					<excludes>
-						<testFailureIgnore>true</testFailureIgnore>
+						<!--<skipTests>false</skipTests>
+						<testFailureIgnore>true</testFailureIgnore>-->
 						<forkMode>once</forkMode>
 						<exclude>
 							<groupId>org.projectlombok</groupId>
