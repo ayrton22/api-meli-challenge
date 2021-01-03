@@ -1,6 +1,7 @@
 # api-meli-challenge
 
-##Challenge 1:
+## Challenge 1:
+
 /desafio1java/AppMercadoLibre.java
 
 ## Challengue 2, Run Project:
@@ -12,7 +13,7 @@ path: /src/main/java/api/meli/apimeli/ApiMeliApplication.java
 
 http://localhost:8080/coupons | METHOD: POST
 
-##body:
+## body:
 
 se debe incluir un json con los IDs(itemIds) de los items que querramos incluir(los que se muestran abajo son simplemente un ejemplo) y un presupuesto total que estemos dispuestos a gastar(Amount)
 
@@ -39,12 +40,14 @@ esto devolvera de la mayor cantidad de items, respecto a los ingresados, que pod
 "MLA4"
 ]
 
-##Testing:
+## Testing:
+
 Code coverage > 80%
 
 verificacion con Jocaco
 
-##Herramienta para verificar el funcionamiento de la API:
+## Herramienta para verificar el funcionamiento de la API:
+
 Postman
 
 EN PROGRESO
