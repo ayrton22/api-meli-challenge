@@ -18,6 +18,7 @@ import org.apache.http.impl.client.HttpClients;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -39,6 +40,9 @@ class ApiMeliApplicationTests {
 	@Autowired
 	private CuponController cuponController;
 
+	@Value("${meli.token}")
+	private String meliToken;
+
 	/*
 	 * @Test void contextLoads() {
 	 * 
@@ -47,14 +51,7 @@ class ApiMeliApplicationTests {
 
 	@Test
 	public void test_favs_bad_request() throws ClientProtocolException, IOException, JSONException {
-
-		// @Value("${meli.token}")
-		// private String meliToken;
-
 		CloseableHttpClient client = HttpClients.createDefault();
-		// Given
-		// HttpPost httpPost = new
-		// HttpPost("https://api-meli-challenge-ayr.herokuapp.com/coupons/");
 
 		HttpPost httpPost = new HttpPost("http://localhost:8080/coupons/");
 
@@ -64,8 +61,7 @@ class ApiMeliApplicationTests {
 		httpPost.setEntity(entity);
 		httpPost.setHeader("Accept", "application/json");
 		httpPost.setHeader("Content-type", "application/json");
-		httpPost.setHeader("Authorization",
-				"Bearer APP_USR-8625772137282066-120722-d0396bf54e191f5af4dc2d0ac01b2858-261972528");
+		httpPost.setHeader("Authorization", meliToken);
 
 		CloseableHttpResponse response = client.execute(httpPost);
 
