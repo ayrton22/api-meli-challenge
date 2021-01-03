@@ -6,8 +6,7 @@
 
 ## Challengue 2, Run Project:
 
-Main File: ApiMeliApplication.java
-path: /src/main/java/api/meli/apimeli/ApiMeliApplication.java
+Main File: ApiMeliApplication.java  |  path: /src/main/java/api/meli/apimeli/ApiMeliApplication.java
 
 ## routes:
 
