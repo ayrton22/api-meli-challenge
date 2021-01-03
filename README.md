@@ -6,7 +6,7 @@
 
 ## Challengue 2, Run Project:
 
-Main File: ApiMeliApplication.java  |  path: /src/main/java/api/meli/apimeli/ApiMeliApplication.java
+Main File: ApiMeliApplication.java | path: /src/main/java/api/meli/apimeli/ApiMeliApplication.java
 
 ## routes:
 
@@ -43,7 +43,7 @@ esto devolvera de la mayor cantidad de items, respecto a los ingresados, que pod
 
 Code coverage > 80%
 
-verificacion con Jococo
+verificacion con Jacoco
 
 ## Herramienta para verificar el funcionamiento de la API:
 
