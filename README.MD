@@ -44,7 +44,7 @@ esto devolvera de la mayor cantidad de items, respecto a los ingresados, que pod
 
 Code coverage > 80%
 
-verificacion con Jocaco
+verificacion con Jococo
 
 ## Herramienta para verificar el funcionamiento de la API:
 
