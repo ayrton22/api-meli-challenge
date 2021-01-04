@@ -45,11 +45,12 @@ Code coverage > 80%
 
 verificacion con Jacoco
 
+EN PROGRESO
+
 ## Herramienta para verificar el funcionamiento de la API:
 
 Postman
 
-EN PROGRESO
 
 ## Heroku link:
 
